@@ -6,7 +6,7 @@ class TitleItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.symmetric(horizontal: 5),
+      margin: const EdgeInsets.symmetric(horizontal: 3),
       child: Image.asset(
         'assets/images/capa.jpg',
         fit: BoxFit.cover,

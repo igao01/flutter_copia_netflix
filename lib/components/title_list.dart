@@ -7,11 +7,11 @@ class TitleList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 120,
+      height: 160,
       child: ListView.builder(
         scrollDirection: Axis.horizontal,
         itemCount: 10,
-        itemBuilder: (ctx, index) => TitleItem(),
+        itemBuilder: (ctx, index) => const TitleItem(),
       ),
     );
   }

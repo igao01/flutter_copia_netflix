@@ -1,3 +1,4 @@
+import 'package:copia_netflix/routes/routes.dart';
 import 'package:flutter/material.dart';
 
 class CustomBottomNavigationBar extends StatelessWidget {
@@ -7,7 +8,15 @@ class CustomBottomNavigationBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return BottomNavigationBar(
       backgroundColor: Theme.of(context).colorScheme.surface,
-      onTap: (index) {},
+      onTap: (index) {
+        if (index == 1) {
+          Navigator.of(context).pushNamed(AppRoutes.emBreve);
+        } else if (index == 2) {
+          Navigator.of(context).pushNamed(AppRoutes.downloads);
+        } else {
+          Navigator.of(context).pushNamed(AppRoutes.home);
+        }
+      },
       unselectedItemColor: Colors.grey[600],
       selectedItemColor: Theme.of(context).colorScheme.secondary,
       currentIndex: 0,
@@ -18,12 +27,13 @@ class CustomBottomNavigationBar extends StatelessWidget {
           label: 'Início',
         ),
         BottomNavigationBarItem(
-          activeIcon: Icon(Icons.video_collection),
           icon: Icon(Icons.video_collection_outlined),
+          activeIcon: Icon(Icons.video_collection),
           label: 'Em breve',
         ),
         BottomNavigationBarItem(
-          icon: Icon(Icons.arrow_circle_down_sharp),
+          icon: Icon(Icons.arrow_circle_down),
+          activeIcon: Icon(Icons.arrow_circle_down),
           label: 'Downloads',
         ),
       ],

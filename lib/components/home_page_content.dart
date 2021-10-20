@@ -12,13 +12,13 @@ class HomePageContent extends StatelessWidget {
 
     return Column(
       children: [
-        CustomBottomAppBar(),
-        Container(
+        const CustomBottomAppBar(),
+        SizedBox(
           height: MediaQuery.of(context).size.height - 176,
           child: SingleChildScrollView(
             child: Column(
               children: [
-                HomePageHighlight(),
+                const HomePageHighlight(),
                 const SizedBox(
                   height: 24,
                 ),
@@ -33,7 +33,9 @@ class HomePageContent extends StatelessWidget {
                               categoria,
                               style: Theme.of(context).textTheme.headline5,
                             ),
-                            TitleList(),
+                            const SizedBox(height: 3),
+                            const TitleList(),
+                            const SizedBox(height: 18),
                           ],
                         ),
                       )

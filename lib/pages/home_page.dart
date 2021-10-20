@@ -1,5 +1,4 @@
 import 'package:copia_netflix/components/app_bar_actions.dart';
-import 'package:copia_netflix/components/custom_bottom_app_bar.dart';
 import 'package:copia_netflix/components/custom_bottom_navigation_bar.dart';
 import 'package:copia_netflix/components/home_page_content.dart';
 import 'package:flutter/material.dart';
@@ -22,7 +21,7 @@ class HomePage extends StatelessWidget {
       body: Container(
         color: Theme.of(context).colorScheme.background,
         child: Column(
-          children: [
+          children: const [
             HomePageContent(),
           ],
         ),

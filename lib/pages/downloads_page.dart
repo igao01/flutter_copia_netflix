@@ -1,4 +1,5 @@
 import 'package:copia_netflix/components/app_bar_actions.dart';
+import 'package:copia_netflix/components/custom_bottom_navigation_bar.dart';
 import 'package:flutter/material.dart';
 
 class DownloadsPage extends StatelessWidget {
@@ -11,9 +12,10 @@ class DownloadsPage extends StatelessWidget {
         title: const Text('Downloads'),
         actions: const [AppBarActions()],
       ),
-      body: Center(
+      body: const Center(
         child: Text('Downloads'),
       ),
+      bottomNavigationBar: const CustomBottomNavigationBar(),
     );
   }
 }

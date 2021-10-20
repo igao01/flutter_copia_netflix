@@ -1,3 +1,4 @@
+import 'package:copia_netflix/routes/routes.dart';
 import 'package:flutter/material.dart';
 
 class AppBarActions extends StatelessWidget {
@@ -13,7 +14,7 @@ class AppBarActions extends StatelessWidget {
         ),
         IconButton(
           icon: const Icon(Icons.search),
-          onPressed: () {},
+          onPressed: () => Navigator.of(context).pushNamed(AppRoutes.search),
         ),
         IconButton(
           icon: Image.asset(
@@ -21,7 +22,7 @@ class AppBarActions extends StatelessWidget {
             fit: BoxFit.cover,
             height: 24,
           ),
-          onPressed: () {},
+          onPressed: () => Navigator.of(context).pushNamed(AppRoutes.profile),
         )
       ],
     );

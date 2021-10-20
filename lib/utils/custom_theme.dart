@@ -17,6 +17,10 @@ class CustomTheme {
             color: Colors.white,
             fontSize: 14,
           ),
+          headline3: const TextStyle(
+            color: Colors.white,
+            fontSize: 18,
+          ),
           bodyText2: const TextStyle(
             color: Colors.white,
             fontSize: 16,
@@ -35,9 +39,9 @@ class CustomTheme {
       primary: Colors.black,
       primaryVariant: Colors.black,
       secondary: Colors.white,
-      secondaryVariant: Colors.black,
+      secondaryVariant: Colors.white,
       background: Colors.black,
-      surface: Color(0xFF151515),
+      surface: Color(0xFF212121),
     ),
   );
 }
