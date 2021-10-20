@@ -8,6 +8,7 @@ class Title {
   final String trailerUrl;
   final int year;
   final bool isLikedClassified;
+  final bool hasNewEpisode;
   final List<String> categories;
 
   Title({
@@ -19,7 +20,8 @@ class Title {
     required this.videoUrl,
     required this.trailerUrl,
     required this.year,
-    required this.isLikedClassified,
     required this.categories,
+    this.isLikedClassified = false,
+    this.hasNewEpisode = false,
   });
 }

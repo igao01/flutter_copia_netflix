@@ -23,12 +23,7 @@ class HomePage extends StatelessWidget {
         color: Theme.of(context).colorScheme.background,
         child: Column(
           children: [
-            Stack(
-              children: [
-                HomePageContent(),
-                CustomBottomAppBar(),
-              ],
-            ),
+            HomePageContent(),
           ],
         ),
       ),

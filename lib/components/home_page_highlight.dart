@@ -47,8 +47,8 @@ class HomePageHighlight extends StatelessWidget {
       children: [
         SizedBox(
           height: 360,
-          child: Image.network(
-            'https://images-na.ssl-images-amazon.com/images/I/91SRqeuLLtL.jpg',
+          child: Image.asset(
+            'assets/images/destaque.jpg',
             fit: BoxFit.fill,
           ),
         ),

@@ -20,10 +20,8 @@ List<Title> dummyTitle = [
     title: 'Trollhunters',
     synopsis:
         'Depois de descobrir um amuleto misterioso, um adolescente encontra uma civilização secreta de poderosos trolls sob a pequena cidade de Arcadia.',
-    indicativeRatingImageUrl:
-        'https://img.quizur.com/f/img5ddbf964d88722.81695728.png?lastEdited=1574697344',
-    imageUrl:
-        'https://m.media-amazon.com/images/M/MV5BNzU4MDY5Mjk4OF5BMl5BanBnXkFtZTgwODEzNTE1NTM@._V1_.jpg',
+    indicativeRatingImageUrl: 'assets/images/classificacao-indicativa.webp',
+    imageUrl: 'assets/images/capa.jpg',
     videoUrl: 'https://www.youtube.com/watch?v=J2oNgZlbSKI',
     trailerUrl: 'https://www.youtube.com/watch?v=J2oNgZlbSKI',
     year: 2018,
@@ -31,14 +29,12 @@ List<Title> dummyTitle = [
     categories: ['c1', 'c2', 'c3', 'c4', 'c8'],
   ),
   Title(
-    id: 't1',
+    id: 't2',
     title: 'Trollhunters',
     synopsis:
         'Depois de descobrir um amuleto misterioso, um adolescente encontra uma civilização secreta de poderosos trolls sob a pequena cidade de Arcadia.',
-    indicativeRatingImageUrl:
-        'https://img.quizur.com/f/img5ddbf964d88722.81695728.png?lastEdited=1574697344',
-    imageUrl:
-        'https://m.media-amazon.com/images/M/MV5BNzU4MDY5Mjk4OF5BMl5BanBnXkFtZTgwODEzNTE1NTM@._V1_.jpg',
+    indicativeRatingImageUrl: 'assets/images/classificacao-indicativa.webp',
+    imageUrl: 'assets/images/capa.jpg',
     videoUrl: 'https://www.youtube.com/watch?v=J2oNgZlbSKI',
     trailerUrl: 'https://www.youtube.com/watch?v=J2oNgZlbSKI',
     year: 2018,
@@ -46,14 +42,12 @@ List<Title> dummyTitle = [
     categories: ['c1', 'c2', 'c3', 'c4', 'c8'],
   ),
   Title(
-    id: 't1',
+    id: 't3',
     title: 'Trollhunters',
     synopsis:
         'Depois de descobrir um amuleto misterioso, um adolescente encontra uma civilização secreta de poderosos trolls sob a pequena cidade de Arcadia.',
-    indicativeRatingImageUrl:
-        'https://img.quizur.com/f/img5ddbf964d88722.81695728.png?lastEdited=1574697344',
-    imageUrl:
-        'https://m.media-amazon.com/images/M/MV5BNzU4MDY5Mjk4OF5BMl5BanBnXkFtZTgwODEzNTE1NTM@._V1_.jpg',
+    indicativeRatingImageUrl: 'assets/images/classificacao-indicativa.webp',
+    imageUrl: 'assets/images/capa.jpg',
     videoUrl: 'https://www.youtube.com/watch?v=J2oNgZlbSKI',
     trailerUrl: 'https://www.youtube.com/watch?v=J2oNgZlbSKI',
     year: 2018,
@@ -61,14 +55,105 @@ List<Title> dummyTitle = [
     categories: ['c1', 'c2', 'c3', 'c4', 'c8'],
   ),
   Title(
-    id: 't1',
+    id: 't4',
     title: 'Trollhunters',
     synopsis:
         'Depois de descobrir um amuleto misterioso, um adolescente encontra uma civilização secreta de poderosos trolls sob a pequena cidade de Arcadia.',
-    indicativeRatingImageUrl:
-        'https://img.quizur.com/f/img5ddbf964d88722.81695728.png?lastEdited=1574697344',
-    imageUrl:
-        'https://m.media-amazon.com/images/M/MV5BNzU4MDY5Mjk4OF5BMl5BanBnXkFtZTgwODEzNTE1NTM@._V1_.jpg',
+    indicativeRatingImageUrl: 'assets/images/classificacao-indicativa.webp',
+    imageUrl: 'assets/images/capa.jpg',
+    videoUrl: 'https://www.youtube.com/watch?v=J2oNgZlbSKI',
+    trailerUrl: 'https://www.youtube.com/watch?v=J2oNgZlbSKI',
+    year: 2018,
+    isLikedClassified: false,
+    categories: ['c1', 'c2', 'c3', 'c4', 'c8'],
+  ),
+  Title(
+    id: 't5',
+    title: 'Trollhunters',
+    synopsis:
+        'Depois de descobrir um amuleto misterioso, um adolescente encontra uma civilização secreta de poderosos trolls sob a pequena cidade de Arcadia.',
+    indicativeRatingImageUrl: 'assets/images/classificacao-indicativa.webp',
+    imageUrl: 'assets/images/capa.jpg',
+    videoUrl: 'https://www.youtube.com/watch?v=J2oNgZlbSKI',
+    trailerUrl: 'https://www.youtube.com/watch?v=J2oNgZlbSKI',
+    year: 2018,
+    isLikedClassified: false,
+    categories: ['c1', 'c2', 'c3', 'c4', 'c8'],
+  ),
+  Title(
+    id: 't6',
+    title: 'Trollhunters',
+    synopsis:
+        'Depois de descobrir um amuleto misterioso, um adolescente encontra uma civilização secreta de poderosos trolls sob a pequena cidade de Arcadia.',
+    indicativeRatingImageUrl: 'assets/images/classificacao-indicativa.webp',
+    imageUrl: 'assets/images/capa.jpg',
+    videoUrl: 'https://www.youtube.com/watch?v=J2oNgZlbSKI',
+    trailerUrl: 'https://www.youtube.com/watch?v=J2oNgZlbSKI',
+    year: 2018,
+    isLikedClassified: false,
+    hasNewEpisode: true,
+    categories: ['c1', 'c2', 'c3', 'c4', 'c8'],
+  ),
+  Title(
+    id: 't7',
+    title: 'Trollhunters',
+    synopsis:
+        'Depois de descobrir um amuleto misterioso, um adolescente encontra uma civilização secreta de poderosos trolls sob a pequena cidade de Arcadia.',
+    indicativeRatingImageUrl: 'assets/images/classificacao-indicativa.webp',
+    imageUrl: 'assets/images/capa.jpg',
+    videoUrl: 'https://www.youtube.com/watch?v=J2oNgZlbSKI',
+    trailerUrl: 'https://www.youtube.com/watch?v=J2oNgZlbSKI',
+    year: 2018,
+    isLikedClassified: false,
+    categories: ['c1', 'c2', 'c3', 'c4', 'c8'],
+  ),
+  Title(
+    id: 't8',
+    title: 'Trollhunters',
+    synopsis:
+        'Depois de descobrir um amuleto misterioso, um adolescente encontra uma civilização secreta de poderosos trolls sob a pequena cidade de Arcadia.',
+    indicativeRatingImageUrl: 'assets/images/classificacao-indicativa.webp',
+    imageUrl: 'assets/images/capa.jpg',
+    videoUrl: 'https://www.youtube.com/watch?v=J2oNgZlbSKI',
+    trailerUrl: 'https://www.youtube.com/watch?v=J2oNgZlbSKI',
+    year: 2018,
+    isLikedClassified: false,
+    categories: ['c1', 'c2', 'c3', 'c4', 'c8'],
+  ),
+  Title(
+    id: 't9',
+    title: 'Trollhunters',
+    synopsis:
+        'Depois de descobrir um amuleto misterioso, um adolescente encontra uma civilização secreta de poderosos trolls sob a pequena cidade de Arcadia.',
+    indicativeRatingImageUrl: 'assets/images/classificacao-indicativa.webp',
+    imageUrl: 'assets/images/capa.jpg',
+    videoUrl: 'https://www.youtube.com/watch?v=J2oNgZlbSKI',
+    trailerUrl: 'https://www.youtube.com/watch?v=J2oNgZlbSKI',
+    year: 2018,
+    isLikedClassified: false,
+    hasNewEpisode: true,
+    categories: ['c1', 'c2', 'c3', 'c4', 'c8'],
+  ),
+  Title(
+    id: 't10',
+    title: 'Trollhunters',
+    synopsis:
+        'Depois de descobrir um amuleto misterioso, um adolescente encontra uma civilização secreta de poderosos trolls sob a pequena cidade de Arcadia.',
+    indicativeRatingImageUrl: 'assets/images/classificacao-indicativa.webp',
+    imageUrl: 'assets/images/capa.jpg',
+    videoUrl: 'https://www.youtube.com/watch?v=J2oNgZlbSKI',
+    trailerUrl: 'https://www.youtube.com/watch?v=J2oNgZlbSKI',
+    year: 2018,
+    isLikedClassified: false,
+    categories: ['c1', 'c2', 'c3', 'c4', 'c8'],
+  ),
+  Title(
+    id: 't11',
+    title: 'Trollhunters',
+    synopsis:
+        'Depois de descobrir um amuleto misterioso, um adolescente encontra uma civilização secreta de poderosos trolls sob a pequena cidade de Arcadia.',
+    indicativeRatingImageUrl: 'assets/images/classificacao-indicativa.webp',
+    imageUrl: 'assets/images/capa.jpg',
     videoUrl: 'https://www.youtube.com/watch?v=J2oNgZlbSKI',
     trailerUrl: 'https://www.youtube.com/watch?v=J2oNgZlbSKI',
     year: 2018,

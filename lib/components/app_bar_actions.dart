@@ -16,8 +16,8 @@ class AppBarActions extends StatelessWidget {
           onPressed: () {},
         ),
         IconButton(
-          icon: Image.network(
-            'https://pixabay.com/get/gf11a6a8325395b3d91cde47ac0bb32143c1613af9eb5ce979b5a037f0b4c61428fa0196f8dd1948cb51ac914ca18f983a58f74b699b10b538edd6fdc45cc0926868088a20b3aaf436a7b5f20c520da1b_1920.png',
+          icon: Image.asset(
+            'assets/images/avatar.png',
             fit: BoxFit.cover,
             height: 24,
           ),

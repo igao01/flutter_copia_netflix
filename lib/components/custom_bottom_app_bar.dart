@@ -23,7 +23,7 @@ class CustomBottomAppBar extends StatelessWidget {
     return Container(
       height: 40,
       width: double.infinity,
-      color: Colors.black38,
+      color: Colors.black,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
