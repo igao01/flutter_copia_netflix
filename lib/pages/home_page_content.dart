@@ -1,4 +1,3 @@
-import 'package:copia_netflix/components/custom_bottom_app_bar.dart';
 import 'package:copia_netflix/components/home_page_highlight.dart';
 import 'package:copia_netflix/components/title_list.dart';
 import 'package:flutter/material.dart';
@@ -12,7 +11,6 @@ class HomePageContent extends StatelessWidget {
 
     return Column(
       children: [
-        const CustomBottomAppBar(),
         SizedBox(
           height: MediaQuery.of(context).size.height - 176,
           child: SingleChildScrollView(

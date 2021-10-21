@@ -1,3 +1,4 @@
+import 'package:copia_netflix/routes/routes.dart';
 import 'package:flutter/material.dart';
 
 class CustomBottomAppBar extends StatelessWidget {
@@ -27,11 +28,16 @@ class CustomBottomAppBar extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
-          _createTextButton('Séries', () {}),
-          _createTextButton('Filmes', () {}),
+          _createTextButton('Séries',
+              () => Navigator.of(context).pushNamed(AppRoutes.series)),
+          _createTextButton('Filmes',
+              () => Navigator.of(context).pushNamed(AppRoutes.movies)),
           Row(
             children: [
-              _createTextButton('Categorias', () {}),
+              _createTextButton(
+                'Categorias',
+                () => Navigator.of(context).pushNamed(AppRoutes.categories),
+              ),
               const Icon(Icons.arrow_drop_down),
             ],
           ),
