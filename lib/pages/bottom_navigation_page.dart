@@ -16,6 +16,7 @@ class BottomNavigationPage extends StatefulWidget {
 
 class _BottomNavigationPageState extends State<BottomNavigationPage> {
   int _selectedBottomPageIndex = 0;
+  bool _isExpandedFAB = false;
   late final List<Map<String, dynamic>> _bottomPages;
 
   @override
@@ -54,6 +55,7 @@ class _BottomNavigationPageState extends State<BottomNavigationPage> {
         color: Theme.of(context).colorScheme.background,
         child: Column(
           children: [
+            // exibe a barra de Séries Filmes Categorias somente na tela principal
             _selectedBottomPageIndex == 0
                 ? const CustomBottomAppBar()
                 : const SizedBox(height: 0),
@@ -64,7 +66,7 @@ class _BottomNavigationPageState extends State<BottomNavigationPage> {
       floatingActionButton:
           // exibe o FAB somente na tela principal
           _selectedBottomPageIndex == 0
-              ? const SurpriseMeFAB()
+              ? SurpriseMeFAB(_isExpandedFAB)
               : const SizedBox(width: 1),
       bottomNavigationBar:
           CustomBottomNavigationBar(_selectedBottomPageIndex, _selectedPage),

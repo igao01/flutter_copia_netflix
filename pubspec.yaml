@@ -64,6 +64,7 @@ flutter:
     - assets/images/capa.jpg
     - assets/images/destaque.jpg
     - assets/images/logo-recortada.jpg
+    - assets/images/logo-completa.jpg
     - assets/images/classificacao-indicativa.webp
 
   # An image asset can refer to one or more resolution-specific "variants", see

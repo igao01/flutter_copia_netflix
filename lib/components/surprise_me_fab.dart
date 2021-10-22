@@ -1,7 +1,10 @@
+import 'package:copia_netflix/routes/routes.dart';
 import 'package:flutter/material.dart';
 
 class SurpriseMeFAB extends StatelessWidget {
-  const SurpriseMeFAB({
+  final bool isExpandedFAB;
+  const SurpriseMeFAB(
+    this.isExpandedFAB, {
     Key? key,
   }) : super(key: key);
 
@@ -11,9 +14,11 @@ class SurpriseMeFAB extends StatelessWidget {
       backgroundColor: Colors.white70,
       label: Text(
         'Surpreenda-me',
-        style: Theme.of(context).textTheme.headline6,
+        style: Theme.of(context).textTheme.headline6!.copyWith(
+              color: Colors.black,
+            ),
       ),
-      isExtended: false,
+      isExtended: isExpandedFAB,
       icon: Row(
         children: [
           SizedBox(
@@ -25,7 +30,7 @@ class SurpriseMeFAB extends StatelessWidget {
           ),
         ],
       ),
-      onPressed: () {},
+      onPressed: () => Navigator.of(context).pushNamed(AppRoutes.surpriseMe),
     );
   }
 }

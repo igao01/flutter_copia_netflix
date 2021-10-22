@@ -14,6 +14,8 @@ class Highlight extends StatelessWidget {
               label,
               style: Theme.of(context).textTheme.headline4,
             ),
+
+            // cria o ponto vermelho separando as tags
             Container(
               margin: const EdgeInsets.only(left: 5),
               width: 3,

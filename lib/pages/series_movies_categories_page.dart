@@ -7,6 +7,7 @@ class SeriesMoviesCategoriesPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // pega o titulo da appBar passado pelo arguments quando a rota é chamada
     final String appBarTitle =
         ModalRoute.of(context)!.settings.arguments as String;
 

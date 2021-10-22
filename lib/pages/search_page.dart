@@ -14,6 +14,8 @@ class SearchPage extends StatelessWidget {
         backgroundColor: Theme.of(context).colorScheme.primary,
         actions: [
           AppBarActions(
+            // passa parametro como true para o icone de pesquisa
+            // ser ocultado da pagina de pesquisa
             wasCalledBySearchPage: true,
           )
         ],

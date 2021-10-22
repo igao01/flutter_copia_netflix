@@ -6,6 +6,7 @@ class CustomBottomAppBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // cria os textButtons da barra Séries Filmes Categorias
     Widget _createTextButton(String label, Function() onPressed) {
       return TextButton(
         child: Text(
@@ -14,7 +15,7 @@ class CustomBottomAppBar extends StatelessWidget {
             color: Colors.white,
             fontSize: 18,
             fontWeight: FontWeight.bold,
-            backgroundColor: Color(0x00000000), // transparente
+            backgroundColor: Color(0x00000000), // cor transparente
           ),
         ),
         onPressed: onPressed,
