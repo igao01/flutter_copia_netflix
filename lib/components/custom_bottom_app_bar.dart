@@ -28,16 +28,23 @@ class CustomBottomAppBar extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
-          _createTextButton('Séries',
-              () => Navigator.of(context).pushNamed(AppRoutes.series)),
-          _createTextButton('Filmes',
-              () => Navigator.of(context).pushNamed(AppRoutes.movies)),
+          _createTextButton(
+            'Séries',
+            () => Navigator.of(context).pushNamed(
+              AppRoutes.seriesMoviesCategories,
+              arguments: 'Séries',
+            ),
+          ),
+          _createTextButton(
+            'Filmes',
+            () => Navigator.of(context).pushNamed(
+              AppRoutes.seriesMoviesCategories,
+              arguments: 'Filmes',
+            ),
+          ),
           Row(
             children: [
-              _createTextButton(
-                'Categorias',
-                () => Navigator.of(context).pushNamed(AppRoutes.categories),
-              ),
+              _createTextButton('Categorias', () {}),
               const Icon(Icons.arrow_drop_down),
             ],
           ),

@@ -16,9 +16,7 @@ class BottomNavigationPage extends StatefulWidget {
 
 class _BottomNavigationPageState extends State<BottomNavigationPage> {
   int _selectedBottomPageIndex = 0;
-  int _selectedTopPageIndex = 0;
   late final List<Map<String, dynamic>> _bottomPages;
-  late final List<Map<String, dynamic>> _topPages;
 
   @override
   void initState() {
@@ -28,21 +26,9 @@ class _BottomNavigationPageState extends State<BottomNavigationPage> {
       {'title': 'Em breve', 'page': const EmBrevePageContent()},
       {'title': 'Downloads', 'page': const DownloadsPageContent()},
     ];
-
-    _topPages = [
-      {'title': 'Inicio', 'page': const HomePageContent()},
-      {'title': 'Em breve', 'page': const EmBrevePageContent()},
-      {'title': 'Downloads', 'page': const DownloadsPageContent()},
-    ];
   }
 
   void _selectedPage(int index) {
-    setState(() {
-      _selectedBottomPageIndex = index;
-    });
-  }
-
-  void _selectedTopPage(int index) {
     setState(() {
       _selectedBottomPageIndex = index;
     });

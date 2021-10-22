@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class HomePageHighlight extends StatelessWidget {
-  const HomePageHighlight({Key? key}) : super(key: key);
+class Highlight extends StatelessWidget {
+  const Highlight({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
