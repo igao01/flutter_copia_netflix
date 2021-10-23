@@ -2,8 +2,8 @@ import 'package:copia_netflix/components/highlight.dart';
 import 'package:copia_netflix/components/title_list.dart';
 import 'package:flutter/material.dart';
 
-class SerisMoviesCategoriesContent extends StatelessWidget {
-  SerisMoviesCategoriesContent({
+class SeriesMoviesCategoriesContent extends StatelessWidget {
+  SeriesMoviesCategoriesContent({
     Key? key,
   }) : super(key: key);
 

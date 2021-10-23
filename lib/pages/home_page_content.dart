@@ -10,7 +10,7 @@ class HomePageContent extends StatelessWidget {
       children: [
         SizedBox(
           height: MediaQuery.of(context).size.height - 176,
-          child: SerisMoviesCategoriesContent(),
+          child: SeriesMoviesCategoriesContent(),
         ),
       ],
     );

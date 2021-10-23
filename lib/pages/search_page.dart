@@ -1,10 +1,26 @@
 import 'package:copia_netflix/components/app_bar_actions.dart';
 import 'package:copia_netflix/components/search_field.dart';
 import 'package:copia_netflix/components/search_title_item.dart';
+import 'package:copia_netflix/viewmodel/search_viewmodel.dart';
 import 'package:flutter/material.dart';
 
-class SearchPage extends StatelessWidget {
+class SearchPage extends StatefulWidget {
   const SearchPage({Key? key}) : super(key: key);
+
+  @override
+  State<SearchPage> createState() => _SearchPageState();
+}
+
+class _SearchPageState extends State<SearchPage> {
+  final _controller = TextEditingController();
+  final _viewModel = SearchViewModelImpl();
+
+  @override
+  void initState() {
+    _controller
+        .addListener(() => _viewModel.inputSearchText.add(_controller.text));
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -25,7 +41,10 @@ class SearchPage extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const SearchField(),
+            SearchField(
+              vm: _viewModel,
+              controller: _controller,
+            ),
             const SizedBox(height: 16),
             SingleChildScrollView(
               child: Column(

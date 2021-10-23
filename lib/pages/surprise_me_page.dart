@@ -1,3 +1,5 @@
+import 'package:copia_netflix/components/surprise_me_fab.dart';
+import 'package:copia_netflix/viewmodel/surprise_me_viewmodel.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -9,6 +11,8 @@ class SurpriseMePage extends StatefulWidget {
 }
 
 class _SurpriseMePageState extends State<SurpriseMePage> {
+  final vm = SurpriseMeViewModelImpl();
+
   // altera o orientacao do dispositivo para landscape
   @override
   initState() {
@@ -28,9 +32,13 @@ class _SurpriseMePageState extends State<SurpriseMePage> {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Center(
+    return Scaffold(
+      body: const Center(
         child: Text('Surpreenda-me'),
+      ),
+      floatingActionButton: SurpriseMeFAB(
+        isExpandedFAB: true,
+        onPressed: () => vm.newRandomTitle(),
       ),
     );
   }

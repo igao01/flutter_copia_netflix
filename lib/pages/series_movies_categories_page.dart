@@ -24,7 +24,7 @@ class SeriesMoviesCategoriesPage extends StatelessWidget {
           children: [
             SizedBox(
                 height: MediaQuery.of(context).size.height - 80,
-                child: SerisMoviesCategoriesContent())
+                child: SeriesMoviesCategoriesContent())
           ],
         ),
       ),

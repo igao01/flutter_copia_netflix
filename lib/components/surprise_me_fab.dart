@@ -3,9 +3,12 @@ import 'package:flutter/material.dart';
 
 class SurpriseMeFAB extends StatelessWidget {
   final bool isExpandedFAB;
-  const SurpriseMeFAB(
-    this.isExpandedFAB, {
+  final Function() onPressed;
+
+  SurpriseMeFAB({
     Key? key,
+    required this.isExpandedFAB,
+    required this.onPressed,
   }) : super(key: key);
 
   @override
@@ -16,6 +19,7 @@ class SurpriseMeFAB extends StatelessWidget {
         'Surpreenda-me',
         style: Theme.of(context).textTheme.headline6!.copyWith(
               color: Colors.black,
+              fontSize: 18,
             ),
       ),
       isExtended: isExpandedFAB,
@@ -30,7 +34,7 @@ class SurpriseMeFAB extends StatelessWidget {
           ),
         ],
       ),
-      onPressed: () => Navigator.of(context).pushNamed(AppRoutes.surpriseMe),
+      onPressed: () => onPressed,
     );
   }
 }

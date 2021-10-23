@@ -16,7 +16,6 @@ class BottomNavigationPage extends StatefulWidget {
 
 class _BottomNavigationPageState extends State<BottomNavigationPage> {
   int _selectedBottomPageIndex = 0;
-  bool _isExpandedFAB = false;
   late final List<Map<String, dynamic>> _bottomPages;
 
   @override
@@ -66,7 +65,10 @@ class _BottomNavigationPageState extends State<BottomNavigationPage> {
       floatingActionButton:
           // exibe o FAB somente na tela principal
           _selectedBottomPageIndex == 0
-              ? SurpriseMeFAB(_isExpandedFAB)
+              ? SurpriseMeFAB(
+                  isExpandedFAB: false,
+                  onPressed: () {},
+                )
               : const SizedBox(width: 1),
       bottomNavigationBar:
           CustomBottomNavigationBar(_selectedBottomPageIndex, _selectedPage),
