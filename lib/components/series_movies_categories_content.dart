@@ -7,7 +7,13 @@ class SeriesMoviesCategoriesContent extends StatelessWidget {
     Key? key,
   }) : super(key: key);
 
-  final categorias = ['Ação', 'Comédia', 'Terror'];
+  final categorias = [
+    'Ação',
+    'Comédia',
+    'Ficção Científica',
+    'Romance',
+    'Terror'
+  ];
 
   @override
   Widget build(BuildContext context) {

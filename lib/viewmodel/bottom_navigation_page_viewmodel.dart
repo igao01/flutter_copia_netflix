@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 
 abstract class BottomNavigationPageViewModel {
   void openSurpriseMePage(BuildContext ctx);
+  void openMyListPage(BuildContext ctx);
 }
 
 class BottomNavigationPageViewModelImpl
@@ -10,5 +11,10 @@ class BottomNavigationPageViewModelImpl
   @override
   void openSurpriseMePage(BuildContext ctx) {
     Navigator.of(ctx).pushNamed(AppRoutes.surpriseMe);
+  }
+
+  @override
+  void openMyListPage(BuildContext ctx) {
+    Navigator.of(ctx).pushNamed(AppRoutes.myList);
   }
 }

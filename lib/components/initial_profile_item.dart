@@ -12,13 +12,16 @@ class InitialProfileItem extends StatelessWidget {
       onTap: () => Navigator.of(context).pushReplacementNamed(AppRoutes.home),
       child: Column(
         children: [
-          Container(
-            height: 100,
-            width: 120,
-            color: Colors.yellow[200],
-            child: Image.asset(
-              'assets/images/avatar.png',
-              fit: BoxFit.cover,
+          ClipRRect(
+            borderRadius: BorderRadius.circular(4),
+            child: Container(
+              height: 100,
+              width: 120,
+              color: Colors.yellow[200],
+              child: Image.asset(
+                'assets/images/avatar.png',
+                fit: BoxFit.cover,
+              ),
             ),
           ),
           const SizedBox(height: 4),
