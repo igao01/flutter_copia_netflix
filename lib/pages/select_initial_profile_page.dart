@@ -42,10 +42,10 @@ class SelectInitialProfilePage extends StatelessWidget {
               width: 350,
               child: GridView(
                 padding: const EdgeInsets.all(25),
-                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                   crossAxisCount: 2,
                 ),
-                children: [
+                children: const [
                   InitialProfileItem(),
                   InitialProfileItem(),
                   InitialProfileItem(),

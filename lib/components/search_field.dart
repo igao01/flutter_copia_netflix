@@ -5,7 +5,7 @@ class SearchField extends StatelessWidget {
   final SearchViewModelImpl vm;
   final TextEditingController controller;
 
-  SearchField({
+  const SearchField({
     required this.controller,
     required this.vm,
     Key? key,

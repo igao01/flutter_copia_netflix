@@ -1,3 +1,4 @@
+import 'package:copia_netflix/components/highlight_button.dart';
 import 'package:flutter/material.dart';
 
 class Highlight extends StatelessWidget {
@@ -30,21 +31,6 @@ class Highlight extends StatelessWidget {
       );
     }
 
-    Widget _createButton(String label, IconData icon) {
-      return InkWell(
-        child: Column(
-          children: [
-            Icon(icon),
-            Text(
-              label,
-              style: Theme.of(context).textTheme.caption,
-            ),
-          ],
-        ),
-        onTap: () {},
-      );
-    }
-
     return Column(
       children: [
         SizedBox(
@@ -67,7 +53,7 @@ class Highlight extends StatelessWidget {
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
-            _createButton('Minha lista', Icons.add),
+            HighlightButton('Minha lista', Icons.add),
             ElevatedButton.icon(
               icon: const Icon(Icons.play_arrow),
               label: Text(
@@ -80,7 +66,7 @@ class Highlight extends StatelessWidget {
               ),
               onPressed: () {},
             ),
-            _createButton('Saiba mais', Icons.info_outline_rounded),
+            HighlightButton('Saiba mais', Icons.info_outline_rounded),
           ],
         ),
       ],

@@ -1,8 +1,15 @@
+import 'package:flutter/cupertino.dart';
+
 abstract class SurpriseMeViewModel {
-  void newRandomTitile();
+  void newRandomTitle() {}
+
+  void backToHomePage(BuildContext context) {}
 }
 
 class SurpriseMeViewModelImpl {
-  @override
   void newRandomTitle() {}
+
+  void backToHomePage(BuildContext context) {
+    Navigator.of(context).pop();
+  }
 }

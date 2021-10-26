@@ -10,6 +10,7 @@ abstract class SearchViewModel {
   Stream<bool> get outputWasTyped;
 
   void dispose();
+  void onTextChange(String text);
 }
 
 class SearchViewModelImpl implements SearchViewModel {
@@ -26,7 +27,6 @@ class SearchViewModelImpl implements SearchViewModel {
   @override
   void dispose() => _searchTextController.close();
 
-  void onTextChange(String text) {
-    print('FUNCIONOU ON TEXT CHANGE: $text');
-  }
+  @override
+  void onTextChange(String text) {}
 }

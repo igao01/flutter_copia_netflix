@@ -1,11 +1,10 @@
-import 'package:copia_netflix/routes/routes.dart';
 import 'package:flutter/material.dart';
 
 class SurpriseMeFAB extends StatelessWidget {
   final bool isExpandedFAB;
   final Function() onPressed;
 
-  SurpriseMeFAB({
+  const SurpriseMeFAB({
     Key? key,
     required this.isExpandedFAB,
     required this.onPressed,
@@ -34,7 +33,7 @@ class SurpriseMeFAB extends StatelessWidget {
           ),
         ],
       ),
-      onPressed: () => onPressed,
+      onPressed: onPressed,
     );
   }
 }

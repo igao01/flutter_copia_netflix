@@ -5,6 +5,7 @@ import 'package:copia_netflix/components/surprise_me_fab.dart';
 import 'package:copia_netflix/pages/downloads_page_content.dart';
 import 'package:copia_netflix/pages/em_breve_page_content.dart';
 import 'package:copia_netflix/pages/home_page_content.dart';
+import 'package:copia_netflix/viewmodel/bottom_navigation_page_viewmodel.dart';
 import 'package:flutter/material.dart';
 
 class BottomNavigationPage extends StatefulWidget {
@@ -15,6 +16,7 @@ class BottomNavigationPage extends StatefulWidget {
 }
 
 class _BottomNavigationPageState extends State<BottomNavigationPage> {
+  final _vm = BottomNavigationPageViewModelImpl();
   int _selectedBottomPageIndex = 0;
   late final List<Map<String, dynamic>> _bottomPages;
 
@@ -67,7 +69,7 @@ class _BottomNavigationPageState extends State<BottomNavigationPage> {
           _selectedBottomPageIndex == 0
               ? SurpriseMeFAB(
                   isExpandedFAB: false,
-                  onPressed: () {},
+                  onPressed: () => _vm.openSurpriseMePage(context),
                 )
               : const SizedBox(width: 1),
       bottomNavigationBar:
