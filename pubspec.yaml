@@ -69,6 +69,8 @@ flutter:
     - assets/images/logo-completa.jpg
     - assets/images/classificacao-indicativa.webp
     - assets/images/em-breve-img.webp
+    - assets/images/notification-img.png
+    - assets/images/downloads-highlight.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

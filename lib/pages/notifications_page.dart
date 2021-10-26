@@ -19,7 +19,41 @@ class NotificationsPage extends StatelessWidget {
         width: MediaQuery.of(context).size.width,
         height: MediaQuery.of(context).size.height - 50,
         color: Theme.of(context).colorScheme.background,
-        child: const Text('Tela de notificações'),
+        child: ListView.builder(
+          itemCount: 15,
+          itemBuilder: (ctx, index) => ListTile(
+            leading: ClipRRect(
+              borderRadius: BorderRadius.circular(5),
+              child: Image.asset(
+                'assets/images/notification-img.png',
+                fit: BoxFit.cover,
+                width: 100,
+              ),
+            ),
+            title: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  'Novidade',
+                  style: Theme.of(context).textTheme.headline3!.copyWith(
+                        fontWeight: FontWeight.bold,
+                      ),
+                ),
+                const SizedBox(height: 5),
+                Text(
+                  'Trollhunters',
+                  style: Theme.of(context).textTheme.headline4,
+                  softWrap: true,
+                ),
+                const SizedBox(height: 2),
+                Text(
+                  '10 de nov.',
+                  style: Theme.of(context).textTheme.caption,
+                ),
+              ],
+            ),
+          ),
+        ),
       ),
     );
   }
