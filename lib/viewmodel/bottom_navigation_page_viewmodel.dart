@@ -1,5 +1,5 @@
 import 'package:copia_netflix/routes/routes.dart';
-import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 
 abstract class BottomNavigationPageViewModel {
   void openSurpriseMePage(BuildContext ctx);

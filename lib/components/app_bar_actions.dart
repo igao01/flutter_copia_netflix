@@ -26,7 +26,7 @@ class AppBarActions extends StatelessWidget {
             height: 24,
           ),
           onPressed: () => Navigator.of(context).pushNamed(AppRoutes.profile),
-        )
+        ),
       ],
     );
   }
