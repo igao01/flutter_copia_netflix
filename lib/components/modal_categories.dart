@@ -1,4 +1,4 @@
-import 'package:copia_netflix/components/close_categories_model_button.dart';
+import 'package:copia_netflix/components/modal_categories_close_button.dart';
 import 'package:copia_netflix/components/modal_categories_list.dart';
 import 'package:flutter/material.dart';
 
@@ -19,7 +19,7 @@ class ModalCategories extends StatelessWidget {
         child: Stack(
           children: const [
             ModalCategoriesList(),
-            CloseCategoriesModalButton(),
+            ModalCategoriesCloseButton(),
           ],
         ),
       ),

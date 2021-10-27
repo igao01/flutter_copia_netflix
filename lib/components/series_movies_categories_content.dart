@@ -7,7 +7,7 @@ class SeriesMoviesCategoriesContent extends StatelessWidget {
     Key? key,
   }) : super(key: key);
 
-  final categorias = [
+  final categories = [
     'Ação',
     'Comédia',
     'Ficção Científica',
@@ -26,7 +26,7 @@ class SeriesMoviesCategoriesContent extends StatelessWidget {
           ),
           // Lista de titulo
           Column(
-            children: categorias
+            children: categories
                 .map(
                   (categoria) => Column(
                     crossAxisAlignment: CrossAxisAlignment.start,

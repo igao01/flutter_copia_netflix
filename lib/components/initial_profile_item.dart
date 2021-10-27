@@ -26,7 +26,7 @@ class InitialProfileItem extends StatelessWidget {
           ),
           const SizedBox(height: 4),
           Text(
-            'Profile',
+            'Nome',
             style: Theme.of(context).textTheme.bodyText1,
           ),
         ],

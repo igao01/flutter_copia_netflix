@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class CloseCategoriesModalButton extends StatelessWidget {
-  const CloseCategoriesModalButton({
+class ModalCategoriesCloseButton extends StatelessWidget {
+  const ModalCategoriesCloseButton({
     Key? key,
   }) : super(key: key);
 

@@ -23,8 +23,10 @@ class _BottomNavigationPageState extends State<BottomNavigationPage> {
   @override
   void initState() {
     super.initState();
+
+    // define um map com as páginas que serão utilizada na BottomNavigationBar
     _bottomPages = [
-      {'title': 'Inicio', 'page': const HomePageContent()},
+      {'title': 'Início', 'page': const HomePageContent()},
       {'title': 'Em breve', 'page': const EmBrevePageContent()},
       {'title': 'Downloads', 'page': const DownloadsPageContent()},
     ];
@@ -40,15 +42,17 @@ class _BottomNavigationPageState extends State<BottomNavigationPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: _selectedBottomPageIndex == 0
-            ? Image.asset(
-                'assets/images/logo-recortada.jpg',
-                fit: BoxFit.contain,
-                height: 50,
-              )
-            : Text(
-                _bottomPages[_selectedBottomPageIndex]['title'],
-              ),
+        title:
+            // exibe a logo somente na tela inicial
+            _selectedBottomPageIndex == 0
+                ? Image.asset(
+                    'assets/images/logo-recortada.jpg',
+                    fit: BoxFit.contain,
+                    height: 50,
+                  )
+                : Text(
+                    _bottomPages[_selectedBottomPageIndex]['title'],
+                  ),
         actions: [AppBarActions()],
         backgroundColor: Theme.of(context).colorScheme.background,
       ),
@@ -56,7 +60,7 @@ class _BottomNavigationPageState extends State<BottomNavigationPage> {
         color: Theme.of(context).colorScheme.background,
         child: Column(
           children: [
-            // exibe a barra de Séries Filmes Categorias somente na tela principal
+            // exibe a barra de Séries Filmes Categorias somente na tela inicial
             _selectedBottomPageIndex == 0
                 ? CustomBottomAppBar(_vm)
                 : const SizedBox(height: 0),
@@ -65,7 +69,7 @@ class _BottomNavigationPageState extends State<BottomNavigationPage> {
         ),
       ),
       floatingActionButton:
-          // exibe o FAB somente na tela principal
+          // exibe o FAB somente na tela inicial
           _selectedBottomPageIndex == 0
               ? SurpriseMeFAB(
                   isExpandedFAB: false,
