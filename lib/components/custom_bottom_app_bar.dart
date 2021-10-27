@@ -1,8 +1,14 @@
+import 'package:copia_netflix/components/modal_categories.dart';
 import 'package:copia_netflix/routes/routes.dart';
+import 'package:copia_netflix/viewmodel/bottom_navigation_page_viewmodel.dart';
 import 'package:flutter/material.dart';
 
 class CustomBottomAppBar extends StatelessWidget {
-  const CustomBottomAppBar({Key? key}) : super(key: key);
+  final BottomNavigationPageViewModelImpl vm;
+  const CustomBottomAppBar(
+    this.vm, {
+    Key? key,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -19,6 +25,13 @@ class CustomBottomAppBar extends StatelessWidget {
           ),
         ),
         onPressed: onPressed,
+      );
+    }
+
+    _openCategoriesModal(BuildContext ctx) {
+      showDialog(
+        context: ctx,
+        builder: (_) => const ModalCategories(),
       );
     }
 
@@ -45,7 +58,10 @@ class CustomBottomAppBar extends StatelessWidget {
           ),
           Row(
             children: [
-              _createTextButton('Categorias', () {}),
+              _createTextButton(
+                'Categorias',
+                () => _openCategoriesModal(context),
+              ),
               const Icon(Icons.arrow_drop_down),
             ],
           ),

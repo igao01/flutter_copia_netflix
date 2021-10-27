@@ -58,7 +58,7 @@ class _BottomNavigationPageState extends State<BottomNavigationPage> {
           children: [
             // exibe a barra de Séries Filmes Categorias somente na tela principal
             _selectedBottomPageIndex == 0
-                ? const CustomBottomAppBar()
+                ? CustomBottomAppBar(_vm)
                 : const SizedBox(height: 0),
             _bottomPages[_selectedBottomPageIndex]['page'],
           ],
