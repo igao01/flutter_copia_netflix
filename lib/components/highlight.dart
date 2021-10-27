@@ -1,5 +1,6 @@
 import 'package:copia_netflix/components/highlight_button.dart';
 import 'package:copia_netflix/components/highlight_elevated_button.dart';
+import 'package:copia_netflix/components/modal_title_detail.dart';
 import 'package:flutter/material.dart';
 
 class Highlight extends StatelessWidget {
@@ -7,6 +8,15 @@ class Highlight extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    _openTitleDetailModal(BuildContext context) {
+      final mediaSize = MediaQuery.of(context).size;
+
+      showModalBottomSheet(
+        context: context,
+        builder: (_) => ModalTitleDetail(mediaSize: mediaSize),
+      );
+    }
+
     Widget _createTag(String label) {
       return Container(
         margin: const EdgeInsets.only(left: 5),
@@ -56,7 +66,11 @@ class Highlight extends StatelessWidget {
           children: [
             HighlightButton('Minha lista', Icons.add),
             const HighlightElevatedButton(),
-            HighlightButton('Saiba mais', Icons.info_outline_rounded),
+            HighlightButton(
+              'Saiba mais',
+              Icons.info_outline_rounded,
+              onTap: () => _openTitleDetailModal(context),
+            ),
           ],
         ),
       ],

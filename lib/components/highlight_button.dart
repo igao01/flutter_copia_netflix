@@ -3,10 +3,12 @@ import 'package:flutter/material.dart';
 class HighlightButton extends StatelessWidget {
   IconData icon;
   String label;
+  Function()? onTap;
 
   HighlightButton(
     this.label,
     this.icon, {
+    this.onTap,
     Key? key,
   }) : super(key: key);
 
@@ -22,7 +24,7 @@ class HighlightButton extends StatelessWidget {
           ),
         ],
       ),
-      onTap: () {},
+      onTap: onTap,
     );
   }
 }
