@@ -1,3 +1,4 @@
+import 'package:copia_netflix/routes/routes.dart';
 import 'package:flutter/material.dart';
 
 class EmBreveItem extends StatelessWidget {
@@ -7,18 +8,21 @@ class EmBreveItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Column _createButton(String label, IconData icon) {
-      return Column(
-        children: [
-          Icon(
-            icon,
-            size: 26,
-          ),
-          Text(
-            label,
-            style: Theme.of(context).textTheme.caption,
-          ),
-        ],
+    Padding _createButton(String label, IconData icon) {
+      return Padding(
+        padding: const EdgeInsets.only(right: 8),
+        child: Column(
+          children: [
+            Icon(
+              icon,
+              size: 24,
+            ),
+            Text(
+              label,
+              style: Theme.of(context).textTheme.caption,
+            ),
+          ],
+        ),
       );
     }
 
@@ -50,7 +54,11 @@ class EmBreveItem extends StatelessWidget {
               const Spacer(),
               _createButton('Receber aviso', Icons.notifications),
               const SizedBox(width: 8),
-              _createButton('Saiba mais', Icons.info_outline_rounded),
+              InkWell(
+                onTap: () =>
+                    Navigator.of(context).pushNamed(AppRoutes.titleDetail),
+                child: _createButton('Saiba mais', Icons.info_outline_rounded),
+              ),
             ],
           ),
         ),

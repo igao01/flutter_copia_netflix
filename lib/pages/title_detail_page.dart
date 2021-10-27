@@ -64,9 +64,17 @@ class TitileDetailPage extends StatelessWidget {
               ),
               const SizedBox(height: 16),
               const TitleDetailSelectSeasonButton(),
-              const SizedBox(
-                height: 200,
-                child: TitleDetailEpisodeItem(),
+              SizedBox(
+                height: 760,
+                child: Column(
+                  children: const [
+                    TitleDetailEpisodeItem(),
+                    TitleDetailEpisodeItem(),
+                    TitleDetailEpisodeItem(),
+                    TitleDetailEpisodeItem(),
+                    TitleDetailEpisodeItem(),
+                  ],
+                ),
               ),
             ],
           ),

@@ -44,11 +44,14 @@ class Highlight extends StatelessWidget {
 
     return Column(
       children: [
-        SizedBox(
-          height: 360,
-          child: Image.asset(
-            'assets/images/destaque.jpg',
-            fit: BoxFit.fill,
+        InkWell(
+          onTap: () => _openTitleDetailModal(context),
+          child: SizedBox(
+            height: 360,
+            child: Image.asset(
+              'assets/images/destaque.jpg',
+              fit: BoxFit.fill,
+            ),
           ),
         ),
         const SizedBox(height: 8),

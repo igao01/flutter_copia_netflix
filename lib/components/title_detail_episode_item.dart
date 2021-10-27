@@ -8,6 +8,7 @@ class TitleDetailEpisodeItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         ListTile(
           leading: Image.asset('assets/images/notification-img.png'),
@@ -18,10 +19,14 @@ class TitleDetailEpisodeItem extends StatelessWidget {
             onPressed: () {},
           ),
         ),
-        Text(
-          'Depois de descobrir um amuleto misterioso, um adolescente encontra uma civilização secreta de poderosos trolls sob a pequena cidade de Arcadia.',
-          style: Theme.of(context).textTheme.caption,
+        SizedBox(
+          width: 300,
+          child: Text(
+            'Depois de descobrir um amuleto misterioso, um adolescente encontra uma civilização secreta de poderosos trolls sob a pequena cidade de Arcadia.',
+            style: Theme.of(context).textTheme.caption,
+          ),
         ),
+        const SizedBox(height: 16),
       ],
     );
   }
