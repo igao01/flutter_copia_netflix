@@ -1,4 +1,5 @@
 import 'package:copia_netflix/components/highlight_button.dart';
+import 'package:copia_netflix/components/highlight_elevated_button.dart';
 import 'package:flutter/material.dart';
 
 class Highlight extends StatelessWidget {
@@ -54,18 +55,7 @@ class Highlight extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
             HighlightButton('Minha lista', Icons.add),
-            ElevatedButton.icon(
-              icon: const Icon(Icons.play_arrow),
-              label: Text(
-                'Assistir',
-                style: Theme.of(context).textTheme.button,
-              ),
-              style: TextButton.styleFrom(
-                primary: Theme.of(context).colorScheme.primary,
-                backgroundColor: Theme.of(context).colorScheme.secondary,
-              ),
-              onPressed: () {},
-            ),
+            const HighlightElevatedButton(),
             HighlightButton('Saiba mais', Icons.info_outline_rounded),
           ],
         ),

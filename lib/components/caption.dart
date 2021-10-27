@@ -17,7 +17,7 @@ class Caption extends StatelessWidget {
     return Row(
       children: [
         Text(
-          duration,
+          '$year',
           style: Theme.of(context).textTheme.caption,
         ),
         const SizedBox(width: 20),
@@ -28,7 +28,7 @@ class Caption extends StatelessWidget {
         ),
         const SizedBox(width: 20),
         Text(
-          '$year',
+          duration,
           style: Theme.of(context).textTheme.caption,
         ),
       ],

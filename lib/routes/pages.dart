@@ -8,6 +8,7 @@ import 'package:copia_netflix/pages/series_movies_categories_page.dart';
 import 'package:copia_netflix/pages/change_profile_page.dart';
 import 'package:copia_netflix/pages/search_page.dart';
 import 'package:copia_netflix/pages/surprise_me_page.dart';
+import 'package:copia_netflix/pages/title_detail_page.dart';
 import 'package:copia_netflix/routes/routes.dart';
 
 class AppPages {
@@ -21,6 +22,7 @@ class AppPages {
     AppRoutes.surpriseMe: (ctx) => const SurpriseMePage(),
     AppRoutes.notifications: (ctx) => const NotificationsPage(),
     AppRoutes.myList: (ctx) => const MyListPage(),
+    AppRoutes.titleDetail: (ctx) => const TitileDetailPage(),
     AppRoutes.seriesMoviesCategories: (ctx) =>
         const SeriesMoviesCategoriesPage(),
   };
