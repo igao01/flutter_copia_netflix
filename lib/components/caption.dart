@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
 class Caption extends StatelessWidget {
-  String duration;
-  String img;
-  int year;
+  final String duration;
+  final String img;
+  final int year;
 
-  Caption({
+  const Caption({
     Key? key,
     required this.img,
     required this.year,

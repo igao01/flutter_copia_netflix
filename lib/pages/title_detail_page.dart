@@ -14,7 +14,7 @@ class TitileDetailPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.background,
-        actions: [AppBarActions()],
+        actions: const [AppBarActions()],
       ),
       body: Container(
         color: Theme.of(context).colorScheme.background,

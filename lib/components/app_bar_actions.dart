@@ -2,9 +2,9 @@ import 'package:copia_netflix/routes/routes.dart';
 import 'package:flutter/material.dart';
 
 class AppBarActions extends StatelessWidget {
-  bool? wasCalledBySearchPage;
+  final bool? wasCalledBySearchPage;
 
-  AppBarActions({
+  const AppBarActions({
     this.wasCalledBySearchPage = false,
     Key? key,
   }) : super(key: key);

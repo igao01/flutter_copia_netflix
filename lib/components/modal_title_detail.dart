@@ -34,8 +34,8 @@ class ModalTitleDetail extends StatelessWidget {
               ),
               InkWell(
                 child: const ModalTitleDetailMoreInfo(),
-                onTap: () =>
-                    Navigator.of(context).pushNamed(AppRoutes.titleDetail),
+                onTap: () => Navigator.of(context)
+                    .pushReplacementNamed(AppRoutes.titleDetail),
               ),
             ],
           ),

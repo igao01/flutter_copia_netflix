@@ -67,7 +67,7 @@ class Highlight extends StatelessWidget {
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
-            HighlightButton('Minha lista', Icons.add),
+            const HighlightButton('Minha lista', Icons.add),
             const HighlightElevatedButton(),
             HighlightButton(
               'Saiba mais',

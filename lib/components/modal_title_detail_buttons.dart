@@ -21,8 +21,8 @@ class ModalTitleDetailButtons extends StatelessWidget {
             width: mediaSize.width * 0.45,
             child: const HighlightElevatedButton(),
           ),
-          HighlightButton('Download', Icons.download_rounded),
-          HighlightButton('Trailer', Icons.play_arrow_outlined),
+          const HighlightButton('Download', Icons.download_rounded),
+          const HighlightButton('Trailer', Icons.play_arrow_outlined),
         ],
       ),
     );

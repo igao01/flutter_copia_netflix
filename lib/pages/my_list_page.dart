@@ -1,4 +1,5 @@
 import 'package:copia_netflix/components/app_bar_actions.dart';
+import 'package:copia_netflix/routes/routes.dart';
 import 'package:flutter/material.dart';
 
 class MyListPage extends StatelessWidget {
@@ -10,7 +11,7 @@ class MyListPage extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Minha Lista'),
         backgroundColor: Theme.of(context).colorScheme.background,
-        actions: [AppBarActions()],
+        actions: const [AppBarActions()],
       ),
       body: Container(
         height: MediaQuery.of(context).size.height,
@@ -35,57 +36,37 @@ class MyListPage extends StatelessWidget {
                   crossAxisSpacing: 5,
                 ),
                 children: [
-                  ClipRRect(
-                    borderRadius: BorderRadius.circular(10),
-                    child: Image.asset('assets/images/capa.jpg'),
+                  InkWell(
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(10),
+                      child: Image.asset('assets/images/capa.jpg'),
+                    ),
+                    onTap: () =>
+                        Navigator.of(context).pushNamed(AppRoutes.titleDetail),
                   ),
-                  ClipRRect(
-                    borderRadius: BorderRadius.circular(10),
-                    child: Image.asset('assets/images/capa.jpg'),
+                  InkWell(
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(10),
+                      child: Image.asset('assets/images/capa.jpg'),
+                    ),
+                    onTap: () =>
+                        Navigator.of(context).pushNamed(AppRoutes.titleDetail),
                   ),
-                  ClipRRect(
-                    borderRadius: BorderRadius.circular(10),
-                    child: Image.asset('assets/images/capa.jpg'),
+                  InkWell(
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(10),
+                      child: Image.asset('assets/images/capa.jpg'),
+                    ),
+                    onTap: () =>
+                        Navigator.of(context).pushNamed(AppRoutes.titleDetail),
                   ),
-                  ClipRRect(
-                    borderRadius: BorderRadius.circular(10),
-                    child: Image.asset('assets/images/capa.jpg'),
-                  ),
-                  ClipRRect(
-                    borderRadius: BorderRadius.circular(10),
-                    child: Image.asset('assets/images/capa.jpg'),
-                  ),
-                  ClipRRect(
-                    borderRadius: BorderRadius.circular(10),
-                    child: Image.asset('assets/images/capa.jpg'),
-                  ),
-                  ClipRRect(
-                    borderRadius: BorderRadius.circular(10),
-                    child: Image.asset('assets/images/capa.jpg'),
-                  ),
-                  ClipRRect(
-                    borderRadius: BorderRadius.circular(10),
-                    child: Image.asset('assets/images/capa.jpg'),
-                  ),
-                  ClipRRect(
-                    borderRadius: BorderRadius.circular(10),
-                    child: Image.asset('assets/images/capa.jpg'),
-                  ),
-                  ClipRRect(
-                    borderRadius: BorderRadius.circular(10),
-                    child: Image.asset('assets/images/capa.jpg'),
-                  ),
-                  ClipRRect(
-                    borderRadius: BorderRadius.circular(10),
-                    child: Image.asset('assets/images/capa.jpg'),
-                  ),
-                  ClipRRect(
-                    borderRadius: BorderRadius.circular(10),
-                    child: Image.asset('assets/images/capa.jpg'),
-                  ),
-                  ClipRRect(
-                    borderRadius: BorderRadius.circular(10),
-                    child: Image.asset('assets/images/capa.jpg'),
+                  InkWell(
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(10),
+                      child: Image.asset('assets/images/capa.jpg'),
+                    ),
+                    onTap: () =>
+                        Navigator.of(context).pushNamed(AppRoutes.titleDetail),
                   ),
                 ],
               ),

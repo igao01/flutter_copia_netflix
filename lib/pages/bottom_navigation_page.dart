@@ -53,7 +53,7 @@ class _BottomNavigationPageState extends State<BottomNavigationPage> {
                 : Text(
                     _bottomPages[_selectedBottomPageIndex]['title'],
                   ),
-        actions: [AppBarActions()],
+        actions: const [AppBarActions()],
         backgroundColor: Theme.of(context).colorScheme.background,
       ),
       body: Container(

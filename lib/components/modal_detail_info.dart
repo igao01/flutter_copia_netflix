@@ -32,7 +32,7 @@ class ModalTitleDetailInfo extends StatelessWidget {
               'Trollhunters',
               style: Theme.of(context).textTheme.headline5,
             ),
-            Caption(
+            const Caption(
               img: 'assets/images/classificacao-indicativa.webp',
               year: 2018,
               duration: '3 Partes',

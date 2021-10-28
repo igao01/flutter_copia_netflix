@@ -28,7 +28,7 @@ class _SearchPageState extends State<SearchPage> {
       appBar: AppBar(
         title: const Text('Pesquisa'),
         backgroundColor: Theme.of(context).colorScheme.primary,
-        actions: [
+        actions: const [
           AppBarActions(
             // passa parametro como true para o icone de pesquisa
             // ser ocultado da pagina de pesquisa

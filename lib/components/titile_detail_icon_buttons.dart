@@ -10,7 +10,7 @@ class TitleDetailIconButtons extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-      children: [
+      children: const [
         HighlightButton('Minha Lista', Icons.add),
         HighlightButton('Classifique', Icons.thumb_up_alt_outlined),
         HighlightButton('Compartilhe', Icons.share),

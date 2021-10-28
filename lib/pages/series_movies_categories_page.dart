@@ -14,7 +14,7 @@ class SeriesMoviesCategoriesPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(appBarTitle),
-        actions: [AppBarActions()],
+        actions: const [AppBarActions()],
         backgroundColor: Theme.of(context).colorScheme.background,
       ),
       body: Container(

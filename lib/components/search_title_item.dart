@@ -1,3 +1,4 @@
+import 'package:copia_netflix/routes/routes.dart';
 import 'package:flutter/material.dart';
 
 class SearchTitleItem extends StatelessWidget {
@@ -8,7 +9,7 @@ class SearchTitleItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: () {},
+      onTap: () => Navigator.of(context).pushNamed(AppRoutes.titleDetail),
       child: Container(
         color: Theme.of(context).colorScheme.surface,
         margin: const EdgeInsets.only(bottom: 3),

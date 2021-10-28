@@ -5,7 +5,7 @@ import 'package:copia_netflix/pages/my_list_page.dart';
 import 'package:copia_netflix/pages/notifications_page.dart';
 import 'package:copia_netflix/pages/select_initial_profile_page.dart';
 import 'package:copia_netflix/pages/series_movies_categories_page.dart';
-import 'package:copia_netflix/pages/change_profile_page.dart';
+import 'package:copia_netflix/pages/profile_and_more_page.dart';
 import 'package:copia_netflix/pages/search_page.dart';
 import 'package:copia_netflix/pages/surprise_me_page.dart';
 import 'package:copia_netflix/pages/title_detail_page.dart';
@@ -18,7 +18,7 @@ class AppPages {
     AppRoutes.emBreve: (ctx) => const EmBrevePageContent(),
     AppRoutes.downloads: (ctx) => const DownloadsPageContent(),
     AppRoutes.search: (ctx) => const SearchPage(),
-    AppRoutes.profile: (ctx) => const ProfilePage(),
+    AppRoutes.profile: (ctx) => const ProfileAndMorePage(),
     AppRoutes.surpriseMe: (ctx) => const SurpriseMePage(),
     AppRoutes.notifications: (ctx) => const NotificationsPage(),
     AppRoutes.myList: (ctx) => const MyListPage(),

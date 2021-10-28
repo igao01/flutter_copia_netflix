@@ -17,7 +17,7 @@ class SurpriseMeInfo extends StatelessWidget {
           'Trollhunters',
           style: Theme.of(context).textTheme.headline5,
         ),
-        Caption(
+        const Caption(
             duration: '2 Temporadas',
             year: 2018,
             img: 'assets/images/classificacao-indicativa.webp'),
@@ -31,9 +31,9 @@ class SurpriseMeInfo extends StatelessWidget {
         ),
         const Spacer(),
         Row(
-          children: [
+          children: const [
             HighlightButton('Compartilhar', Icons.share),
-            const SizedBox(width: 8),
+            SizedBox(width: 8),
             HighlightButton('Minha Lista', Icons.add),
           ],
         ),

@@ -17,7 +17,7 @@ class TitleDetailCaption extends StatelessWidget {
               ),
         ),
         const SizedBox(width: 20),
-        Caption(
+        const Caption(
           img: 'assets/images/classificacao-indicativa.webp',
           year: 2018,
           duration: '3 Partes',

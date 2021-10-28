@@ -13,7 +13,7 @@ class NotificationsPage extends StatelessWidget {
           'Notificações',
           style: Theme.of(context).textTheme.headline5,
         ),
-        actions: [AppBarActions()],
+        actions: const [AppBarActions()],
         backgroundColor: Theme.of(context).colorScheme.background,
       ),
       body: Container(
