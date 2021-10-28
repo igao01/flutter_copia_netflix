@@ -1,6 +1,7 @@
 # copia_netflix
 
-A new Flutter project.
+Este projeto foi desenvolvido com intuito de aprimorar os conhecimentos
+no desenvolvimento de interfaces utilizando o Flutter
 
 ## Getting Started
 
