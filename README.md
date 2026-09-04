@@ -25,6 +25,10 @@ Entre os elementos reproduzidos estão:
 - Botão flutuante
 - Navegação entre telas
 
+## Demonstração
+
+![Demonstração do projeto](./flutter_copia_netflix.gif)
+
 ## Tecnologias
 
 - Flutter
